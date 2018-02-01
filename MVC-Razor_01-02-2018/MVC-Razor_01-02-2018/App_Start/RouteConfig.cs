@@ -16,7 +16,7 @@ namespace MVC_Razor_01_02_2018
 			routes.MapRoute(
 				name: "Default",
 				url: "{controller}/{action}/{id}",
-				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+				defaults: new { controller = "Portfolio", action = "Add", id = UrlParameter.Optional }
 			);
 		}
 	}
