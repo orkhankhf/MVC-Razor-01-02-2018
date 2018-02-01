@@ -154,26 +154,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Mail.cs">
-      <DependentUpon>WebStudioModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Portfolio.cs">
-      <DependentUpon>WebStudioModel.tt</DependentUpon>
+      <DependentUpon>PortfolioWebSiteModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\WebStudioModel.Context.cs">
+    <Compile Include="Models\PortfolioWebSiteModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>WebStudioModel.Context.tt</DependentUpon>
+      <DependentUpon>PortfolioWebSiteModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\WebStudioModel.cs">
+    <Compile Include="Models\PortfolioWebSiteModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>WebStudioModel.tt</DependentUpon>
+      <DependentUpon>PortfolioWebSiteModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\WebStudioModel.Designer.cs">
+    <Compile Include="Models\PortfolioWebSiteModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>WebStudioModel.edmx</DependentUpon>
+      <DependentUpon>PortfolioWebSiteModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -199,15 +196,15 @@
     <Content Include="js\jqBootstrapValidation.js" />
     <Content Include="js\jqBootstrapValidation.min.js" />
     <Content Include="mail\contact_me.php" />
-    <Content Include="Models\WebStudioModel.Context.tt">
+    <Content Include="Models\PortfolioWebSiteModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>WebStudioModel.Context.cs</LastGenOutput>
-      <DependentUpon>WebStudioModel.edmx</DependentUpon>
+      <DependentUpon>PortfolioWebSiteModel.edmx</DependentUpon>
+      <LastGenOutput>PortfolioWebSiteModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\WebStudioModel.tt">
+    <Content Include="Models\PortfolioWebSiteModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>WebStudioModel.edmx</DependentUpon>
-      <LastGenOutput>WebStudioModel.cs</LastGenOutput>
+      <DependentUpon>PortfolioWebSiteModel.edmx</DependentUpon>
+      <LastGenOutput>PortfolioWebSiteModel.cs</LastGenOutput>
     </Content>
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -249,12 +246,12 @@
     <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Models\WebStudioModel.edmx">
+    <EntityDeploy Include="Models\PortfolioWebSiteModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>WebStudioModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>PortfolioWebSiteModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\WebStudioModel.edmx.diagram">
-      <DependentUpon>WebStudioModel.edmx</DependentUpon>
+    <Content Include="Models\PortfolioWebSiteModel.edmx.diagram">
+      <DependentUpon>PortfolioWebSiteModel.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <Content Include="Views\Portfolio\Add.cshtml" />
@@ -310,6 +307,8 @@
     <Content Include="vendor\font-awesome\scss\_variables.scss" />
     <Content Include="vendor\jquery\jquery.min.map" />
     <Content Include="vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Views\Portfolio\Select.cshtml" />
+    <Content Include="Views\Portfolio\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

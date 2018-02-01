@@ -17,6 +17,6 @@ namespace MVC_Razor_01_02_2018.Models
         public int id { get; set; }
         public string project_name { get; set; }
         public string project_description { get; set; }
-        public string project_image { get; set; }
+        public string project_img { get; set; }
     }
 }
